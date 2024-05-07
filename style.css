@@ -1,0 +1,208 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(Source/rm222-mind-16.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+}
+
+.header p{
+    margin-top: 20px;
+    margin-left: 100px;
+    font-weight: bolder;
+    margin-right: 180px;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li{
+    margin-right: 150px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li a:hover{
+    color: #98bad5;
+}
+
+.profile-container{
+    display: flex;
+}
+
+.profile-info{
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.logo-logo{
+    display: flex;
+}
+
+.logo-logo img{
+    margin-right: 5px;
+}
+
+
+#linkedin{
+    width: 35px;
+    height: auto;
+}
+
+#instagram{
+    width: 35px;
+    height: auto;
+}
+
+#whatsapp{
+    width: 35px;
+    height: auto;
+}
+
+#github{
+    width: 35px;
+    height: auto;
+}
+
+
+
+.btn-download{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    background-color: #98bad5;
+    color: black;
+    cursor: pointer;
+    padding: 0 35px 0 35px;
+    border: 3px solid #304674;
+    border-radius: 10px;
+}
+
+.btn-download:hover{
+    border-color: beige;
+}
+
+.logo-download img{
+    margin-top: 5px;
+    vertical-align: middle;
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.profile-picture img{
+    width: 400px;
+    height: auto;
+    margin-top: -25px;
+    margin-left: 150px;
+}
+
+.profile-picture img:hover{
+    content: url(Source/profile-hover.png);
+}
+
+.about-container{
+   margin-top: 100px;
+}
+
+.about-info{
+    text-align: center;
+}
+
+.about-info p{
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.myskills-container{
+    margin-top: 100px;
+}
+
+.myskills-info h2{
+    text-align: center;
+}
+
+
+.list-skills ul{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.list-skills ul li{
+    width: calc(33.33% - 30px);
+    display: flex;
+    /* align-items itu gunanya untuk posisi content didalam list nya */
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+
+.list-skills ul li img{
+    height: auto;
+    width: 60px;
+    margin-right: 15px;
+}
+
+.list-skills ul li span{
+    vertical-align: middle;
+}
+
+.list-skills ul li span:hover{
+    color: #98bad5;
+}
+
+
+.projects-container{
+    margin-top: 100px;
+}
+
+.projects-container h2{
+    text-align: center;
+}
+
+.contacts-container{
+    margin-top: 100px;
+}
+
+.contacts-container h2{
+    text-align: center;
+}
+
+.footer-container{
+    background-color: #98bad5;
+    width: 100%;
+}
+
+
+
