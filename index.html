@@ -1,92 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Source/Justin-Lahksana.ico">
-    <title>Profile</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Source/Justin-Lahksana.ico" />
+    <script src="script.js"></script>
+    <title>Davin</title>
+  </head>
+  <body>
     <header class="header">
-        <p>Deavin Alexander Gareso Tonapa</p>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#about-container">ABOUT</a></li>
-                <li><a href="#projects-container">PROJECTS</a></li>
-                <li><a href="#contact-container">CONTACT</a></li>
-            </ul>
-        </nav>
+      <p>Deavin Alexander Gareso Tonapa</p>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about-container">ABOUT</a></li>
+          <li><a href="#projects-container">PORTOFOLIO</a></li>
+          <li><a href="#contact-container">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="logo-logo">
+        <a href="https://www.linkedin.com/in/deavinagt/" target="_blank">
+          <img id="linkedin" src="Source/linkedin.svg" alt="linkedin" />
+        </a>
+        <a href="https://www.instagram.com/davinalexanderrr/" target="_blank">
+          <img id="instagram" src="Source/instagram.svg" alt="instagram" />
+        </a>
+        <a href="https://wa.me/+6281250743003" target="_blank">
+          <img id="whatsapp" src="Source/whatsapp.svg" alt="whatsapp" />
+        </a>
+        <a href="https://github.com/deavinagt" target="_blank">
+          <img id="github" src="Source/github.svg" alt="github" />
+        </a>
+      </div>
     </header>
     <div class="profile-container">
-        <div class="profile-info">
-            <h1>Deavin Alexander Gareso Tonapa<span class="emoji-hi">👋</span></h1>
-            <p>Data Enthusiast - "Let Your Data Tell the Story"</p>
-            <div class="logo-logo">
-                <a href="https://www.linkedin.com/in/deavinagt/" target="_blank">
-                   <img id="linkedin" src="Source/linkedin.svg" alt="linkedin"> 
-                </a>
-                <a href="https://www.instagram.com/davinalexanderrr/" target="_blank">
-                    <img id="instagram" src="Source/instagram.svg" alt="instagram">
-                </a>
-                <a href="https://wa.me/+6281250743003" target="_blank">
-                    <img id="whatsapp" src="Source/whatsapp.svg" alt="whatsapp">
-                </a>
-                <a href="https://github.com/deavinagt" target="_blank">
-                    <img id="github" src="Source/github.svg" alt="github">
-                </a>
-            </div>
-            <button onclick='console.log("saya di klik")' class="btn-download"><span class="logo-download"><img src="Source/download.png" alt="download"></span>CV</button>
-        </div> 
-        <div class="profile-picture">
-            <img src="Source/profile.png" alt="Profile-Ku">
-        </div>  
+      <div class="profile-info">
+        <h3>HELLO, <span>MY NAME IS</span></h3>
+        <h1>
+          <span>Deavin Alexander</span> Gareso Tonapa<span class="emoji-hi"
+            >👋</span
+          >
+        </h1>
+        <p><span>━━</span> Data Enthusiast <span>━━</span></p>
+        <button onclick="downloadCV()" class="btn-download">
+          <span class="logo-download"
+            ><img src="Source/download.png" alt="download" /></span
+          >CV
+        </button>
+      </div>
+      <div class="profile-picture">
+        <img src="Source/profile.png" alt="Profile-Ku" />
+      </div>
     </div>
     <div class="about-container" id="about-container">
+      <h2>About Me</h2>
+      <div class="about-me">
+        <div class="about-info-image">
+          <img src="Source/profile-hover.png" alt="profile-about-me" />
+        </div>
         <div class="about-info">
-            <h2>About Me</h2>
-            <p>"I am currently pursuing a degree in Information Technology at the Faculty of Computer Science, 
-                Brawijaya University. Throughout my academic journey, I have developed essential skills in leadership, 
-                public speaking, team work, management, and responsibility. To stay updated with the latest trends, I 
-                actively in various events, such as attending webinars and joining organizations. I have a strong interest 
-                in data analytics and bussiness intelegence. I am eager to apply my knowledge and contribute to a professional setting while 
-                continuing to learn and grow."
-            </p>
-        </div>      
+          <p>
+            "I am currently pursuing a degree in Information Technology at the
+            Faculty of Computer Science, Brawijaya University. Throughout my
+            academic journey, I have developed essential skills in leadership,
+            public speaking, team work, management, and responsibility. To stay
+            updated with the latest trends, I actively in various events, such
+            as attending webinars and joining organizations. I have a strong
+            interest in <span>Data Analytics</span> and
+            <span>Bussiness Intelegence</span>. I am eager to apply my knowledge
+            and contribute to a professional setting while continuing to learn
+            and grow."
+          </p>
+          <button onclick="letsConnect()" class="btn-letsconnect">
+            Let's Connect
+          </button>
+        </div>
+      </div>
     </div>
     <div class="myskills-container" id="myskills-container">
-        <div class="myskills-info">
-            <h2>My Skills</h2>
-            <div class="list-skills">
-                <ul>
-                    <li><img src="Source/excel.svg" alt=""><span>Excel</span></li>
-                    <li><img src="Source/sql.svg" alt=""><span>SQL</span></li>
-                    <li><img src="Source/python.svg" alt=""><span>Python</span></li>
-                    <li><img src="Source/dbeaver.svg" alt=""><span>DBeaver</span></li>
-                    <li><img src="Source/mysql.svg" alt=""><span>MySQL</span></li>
-                    <li><img src="Source/db2.png" alt=""><span>IBM DB2</span></li>
-                    <li><img src="Source/postgresql.svg" alt=""><span>PostgreSQL</span></li>
-                    <li><img src="Source/bigquery.svg" alt=""><span>Big Query</span></li>
-                    <li><img src="Source/looker.svg" alt=""><span>Looker Studio</span></li>
-                    <li><img src="Source/powerbi.svg" alt=""><span>Power BI</span></li>
-                </ul>
-            </div>
+      <h2>My Skills</h2>
+      <div class="myskills-info">
+        <div class="list-skills">
+          <ul>
+            <li><img src="Source/excel.svg" alt="" /><span>Excel</span></li>
+            <li><img src="Source/sql.svg" alt="" /><span>SQL</span></li>
+            <li><img src="Source/python.svg" alt="" /><span>Python</span></li>
+            <li>
+              <img src="Source/postgresql.svg" alt="" /><span>PostgreSQL</span>
+            </li>
+            <li><img src="Source/mysql.svg" alt="" /><span>MySQL</span></li>
+            <li><img src="Source/db2.png" alt="" /><span>IBM DB2</span></li>
+            <li><img src="Source/dbeaver.svg" alt="" /><span>DBeaver</span></li>
+            <li>
+              <img src="Source/bigquery.svg" alt="" /><span>Big Query</span>
+            </li>
+            <li>
+              <img src="Source/looker.svg" alt="" /><span>Looker Studio</span>
+            </li>
+            <li>
+              <img src="Source/powerbi.svg" alt="" /><span>Power BI</span>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
     <div class="projects-container" id="projects-container">
-        <div class="project-info">
-            <h2>Projects</h2>   
-        </div>
+      <h2>Portofolio</h2>
+      <div class="project">
+        <div class="project-info"></div>
+      </div>
     </div>
     <div class="contacts-container" id="contact-container">
-        <div class="contact-info"></div>
-            <h2>Contact</h2>
+      <div class="contact-info">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contactme-form">
+        <form class="form" action="">
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Name" />
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+          /><br />
+          <label for="subject"></label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+          /><br />
+          <label for="message"></label>
+          <input
+            name="message"
+            id="message"
+            placeholder="Write your message"
+          ></input
+          ><br />
+          <input type="submit" id="send-message" value="Send Message" />
+        </form>
+      </div>
     </div>
+    <div class="thankyou">
+      <q>Thank's for Scrolling</q>
+    </div>
+    <hr>
     <footer class="footer-container">
-        <div class="footer-info">
-            
-        </div>
+      <div class="footer-info">
+        <p class="copyright"><img src="Source/copyright.svg" alt=""> 2024 Deavin Alexander Gareso Tonapa</p>
+        <p>Deavin Alexander Gareso Tonapa</p>
+        <p class="email"><img src="Source/email.svg" alt="">deavinagt@gmail.com</p>  
+      </div>
     </footer>
-</body>
+  </body>
 </html>
