@@ -140,7 +140,7 @@
             placeholder="Write your message"
           ></input
           ><br />
-          <input type="submit" id="send-message" value="Send Message" />
+          <input type="submit" id="send-message" value="Send Message" onclick="SubmitMessage()"/>
         </form>
       </div>
     </div>
@@ -151,9 +151,15 @@
     <footer class="footer-container">
       <div class="footer-info">
         <p class="copyright"><img src="Source/copyright.svg" alt=""> 2024 Deavin Alexander Gareso Tonapa</p>
-        <p>Deavin Alexander Gareso Tonapa</p>
-        <p class="email"><img src="Source/email.svg" alt="">deavinagt@gmail.com</p>  
+        <p class="name">Deavin Alexander Gareso Tonapa</p>
+        <a class="email" href="mailto:deavinagt@gmail.com">
+          <img src="Source/email.svg" alt="">
+          <p>deavinagt@gmail.com</p>
+        </a>
       </div>
     </footer>
+    <div class="scroll-to-top" onclick=" scrollToTop()">
+     <img src="Source/upArrow.svg" alt="upArrow">
+    </div>
   </body>
 </html>

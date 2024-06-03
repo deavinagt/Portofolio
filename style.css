@@ -18,6 +18,7 @@ body {
 .header {
   display: flex;
   position: fixed;
+  width: 100%;
 }
 
 .header p {
@@ -47,6 +48,10 @@ body {
 
 .navbar ul li a:hover {
   color: #98bad5;
+}
+
+.header.scrolled .navbar ul li a:hover {
+  color: white;
 }
 
 .logo-logo {
@@ -300,12 +305,13 @@ body {
 }
 
 #send-message {
-  padding: 10px 30px 10px 30px;
+  padding: 5px 15px 5px 15px;
   margin-bottom: 20px;
   background-color: #98bad5;
   border-radius: 5px;
   border: 3px solid #304674;
   cursor: pointer;
+  font-size: 20px;
 }
 
 #send-message:hover {
@@ -335,6 +341,7 @@ hr{
     display: inline-block;
 }
 
+
 .footer-container {
   margin-top: 10px;
 }
@@ -342,9 +349,7 @@ hr{
 .footer-info{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-
 
 
 .footer-info p{
@@ -357,9 +362,20 @@ hr{
     width: auto;
 }
 
+.copyright{
+  margin-left: 200px;
+}
+
+.name{
+  margin-left: 185px;
+}
+
 .email{
+  text-decoration: none;
+  color: black;
   display: flex;
   align-items: center;
+  margin-left: 265px;
 }
 
 .email img{
@@ -369,3 +385,27 @@ hr{
     width: auto;
 }
 
+.email:hover{
+  color: #98bad5;
+}
+
+.scroll-to-top{
+  display: flex;
+  cursor: pointer;
+  background-color: #304674;
+  border-radius: 50%;
+  margin-top: -100px;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.scroll-to-top img{
+  width: 100px;
+  height: auto;
+}
+
+.scroll-to-top:hover{
+  background-color: white;
+}
